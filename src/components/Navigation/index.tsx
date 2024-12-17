@@ -1,4 +1,3 @@
-// Imports
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -23,15 +22,15 @@ const links = [
 
 function MobileNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Référence pour le menu
+  const menuRef = useRef<HTMLDivElement>(null); // Référence pour le menu avec typage correct
 
   const handleMenuButton = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = (event: MouseEvent) => {
     // Vérifie si le clic est en dehors du menu
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       setIsMenuOpen(false);
     }
   };
