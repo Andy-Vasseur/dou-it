@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        mainBlue: "#3b82f6",
+      },
       backgroundImage: {
         navbg:
           "linear-gradient(to right top, #f6f6f6, #f2f2f2, #efefef, #ebebeb, #e8e8e8)",

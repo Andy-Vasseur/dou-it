@@ -95,9 +95,8 @@ function MobileNavigation() {
         </button>
       </nav>
 
-      {/* Dropdown Menu */}
       <div
-        ref={menuRef} // Référence pour détecter les clics
+        ref={menuRef}
         className={`absolute right-4 mt-2 w-[60%] bg-white border border-gray-300 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out z-[9999] ${
           isMenuOpen
             ? "scale-100 opacity-100"
@@ -124,7 +123,7 @@ function MobileNavigation() {
 
 function DesktopNavigation() {
   return (
-    <nav className="flex justify-between items-center p-4 text-black shadow-md">
+    <nav className="sticky top-0 flex justify-between items-center p-4 w-full text-black shadow-md">
       <Link to="/" className="w-1/3">
         <span>
           <img src={Logo} alt="Logo" className="w-32" />
@@ -144,10 +143,10 @@ function DesktopNavigation() {
       </ul>
       <div className="w-1/3 flex justify-end items-center">
         <ul className="flex justify-center items-center space-x-4">
-          <button className="py-2 px-4 text-sm text-black border-[1px] rounded-full border-black bg-transparent transition-colors duration-200 ease-in-out hover:text-white hover:bg-black">
+          <button className="py-2 px-4 text-sm text-black border-[1px] rounded-full border-black bg-transparent transition-colors duration-200 ease-in-out hover:text-white hover:bg-mainBlue hover:border-transparent">
             <Link to="/login">Compte</Link>
           </button>
-          <button className="py-2 px-4 text-sm text-black border-[1px] rounded-full border-black bg-transparent transition-colors duration-200 ease-in-out hover:text-white hover:bg-black">
+          <button className="py-2 px-4 text-sm text-black border-[1px] rounded-full border-black bg-transparent transition-colors duration-200 ease-in-out hover:text-white hover:bg-mainBlue hover:border-transparent">
             <span>0,00 €</span>
           </button>
         </ul>

@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 // Pages
 import Homepage from "./pages/Homepage";
+import Services from "./pages/Services";
+import NotFound from "./pages/NotFound";
 
 // Components
 import Navigation from "./components/Navigation";
@@ -14,6 +16,8 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

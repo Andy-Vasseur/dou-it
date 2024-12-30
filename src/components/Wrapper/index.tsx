@@ -45,7 +45,7 @@ function Wrapper() {
                 }}
               >
                 {/* Effet de flou et assombrissement uniquement au hover */}
-                <div className="absolute inset-0 transition-all duration-300 sm:group-hover:backdrop-blur-md sm:group-hover:bg-black sm:group-hover:bg-opacity-30"></div>
+                <div className="absolute inset-0 transition-all duration-300 sm:group-hover:backdrop-blur-md sm:group-hover:bg-black sm:group-hover:bg-opacity-40"></div>
 
                 {/* Texte principal */}
                 <div className="flex items-center space-x-2 p-4 w-full bg-[#3B82F6] bg-opacity-65 transition-opacity sm:group-hover:opacity-0 relative z-10">
